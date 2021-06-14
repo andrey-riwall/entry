@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Восстановление Пароля</title>
+  <link rel="stylesheet" href="/forgot/css/normalize.css">
+  <link rel="stylesheet" href="/forgot/css/style.css">
+  <script defer src="/forgot/js/app.js"></script>
+  <script defer src="/forgot/js/app2.js"></script>
+</head>
+<body>
+
+      <!-- ПЕРЕКЛЮЧЕНИЕ ТЕМЫ -->
+    <section class="sct-theme">
+
+      <div class="container sct-theme__container">
+
+        <button class="sct-theme__toggle">
+          <div class="sct-theme__toggle__bg"></div>
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- ХЕДЕР -->
+    <header class="header">
+
+      <div class="container header__container">
+
+        <h1 class="header__heading">
+          Восстановление
+        </h1>
+
+        <p class="header__description">
+          Введите почту и вам придет письмо <br> с кодом восстановления
+        </p>
+
+      </div>
+
+    </header>
+
+    <main>
+
+
+      <!-- СЕКЦИЯ "ФОРМА" -->
+      <section class="sct-form">
+
+        <div class="container sct-form__container">
+
+          <form autocomplete method="POST" class="sct-form__form">
+            
+            <input autocomplete="off" type="email" name="email" placeholder="example@example.com" class="sct-form__form__input">
+
+            <input autocomplete="off" minlength="6" maxlength="6" type="text" name="password" placeholder="Verify Code" class="sct-form__form__input">
+
+            <a href="" class="sct-form__form__mail">
+              Не приходит код?
+            </a>
+
+            <a href="" class="sct-form__form__mail">
+              Сменить почту
+            </a>
+            
+            <!-- <button type="submit" class="btn sct-form__form__btn">
+              ВОЙТИ
+            </button> -->
+
+          </form>
+
+          <button class="btn btn-send">
+            ОТПРАВИТЬ
+          </button>
+
+          <button class="btn btn-verify">
+            ВОССТАНОВИТЬ
+          </button>
+
+          <p class="sct-form__reg">
+            Вспомнили пароль?
+            <a href="/index.html" class="sct-form__reg__link">
+              Войдите
+            </a>
+          </p>
+
+        </div>
+
+      </section>
+
+    </main>
+
+</body>
+</html>

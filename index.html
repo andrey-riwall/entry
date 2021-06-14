@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вход</title>
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script defer src="/js/app.js"></script>
+</head>
+<body>
+
+      <!-- ПЕРЕКЛЮЧЕНИЕ ТЕМЫ -->
+    <section class="sct-theme">
+
+      <div class="container sct-theme__container">
+
+        <button class="sct-theme__toggle">
+          <div class="sct-theme__toggle__bg"></div>
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- ХЕДЕР -->
+    <header class="header">
+
+      <div class="container header__container">
+
+        <div class="header__svg"></div>
+
+        <h1 class="header__heading">
+          Добрый день!
+        </h1>
+
+        <p class="header__description">
+          Введите свою почту и пароль, чтобы войти
+        </p>
+
+      </div>
+
+    </header>
+
+    <main>
+
+
+      <!-- СЕКЦИЯ "ФОРМА" -->
+      <section class="sct-form">
+
+        <div class="container sct-form__container">
+
+          <form action="https://jsonplaceholder.typicode.com/posts" autocomplete method="POST" class="sct-form__form">
+            
+            <input autocomplete="off" type="email" name="email" placeholder="example@example.com" class="sct-form__form__input">
+
+            <input autocomplete="off" minlength="8" maxlength="36" type="password" name="password" placeholder="Password" class="sct-form__form__input">
+
+            <a href="/forgot/index.html" class="sct-form__form__forgot">
+              Забыли пароль?
+            </a>
+
+            <!-- <button type="submit" class="btn sct-form__form__btn">
+              ВОЙТИ
+            </button> -->
+
+            <a class="btn sct-form__form__btn">
+              ВОЙТИ
+            </a>
+
+          </form>
+
+          <p class="sct-form__reg">
+            Нет аккаунта?
+            <a href="/reg/index.html" class="sct-form__reg__link">
+              Зарегистрируйтесь
+            </a>
+          </p>
+
+        </div>
+
+      </section>
+
+    </main>
+
+</body>
+</html>
